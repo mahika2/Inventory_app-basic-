@@ -1,0 +1,77 @@
+
+
+<div *ngIf="lists.length > 0">
+  <div *ngFor="let list of lists">
+    <table align="center" cellspacing="0" border="1" >
+      <col width="200">
+      <col width="200">
+      <col width="200">
+      <tr>
+        <th font-color="Black">Items</th>
+        <th font-color="Black">Price</th>
+      </tr>
+      <tr>
+        <td align="center">{{list.item1}}</td>
+        <td align="center">{{list.price1}}</td>
+      </tr>
+      <tr>
+        <td align="center">{{list.item2}}</td>
+        <td align="center">{{list.price2}}</td>
+      </tr>
+      <tr>
+       <td align="center"><strong>Total Amount</strong></td>
+       <td align="center"><strong>{{list.price1*1 + list.price2*1 }} </strong></td>
+      </tr>
+      
+    </table>
+    <p align="center"><button mat-raised-button  (click)="Checkout()" color="primary" >Checkout</button>
+    </p></div>
+</div>
+<br>
+<br>
+<div *ngIf="bool">
+  <div *ngFor="let list of lists">
+    <table align="center" cellspacing="0"border="1" >
+      <col width="200">
+      <col width="200">
+      <col width="200">
+      <tr>
+        <th font-color="Black">Items</th>
+        <th font-color="Black">Price</th>
+      </tr>
+      <tr>
+        <td align="center">{{list.item1}}</td>
+        <td align="center">{{list.price1}}</td>
+      </tr>
+      <tr>
+        <td align="center">{{list.item2}}</td>
+        <td align="center">{{list.price2}}</td>
+      </tr>
+      <tr>
+       <td align="center"><strong>Total Amount including taxes</strong></td>
+       <td align="center"><strong>{{(list.price1*1 + list.price2*1)*1 + ((list.price1*1 + list.price2*1)*0.2)*1}} </strong></td>
+      </tr>
+      
+    </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

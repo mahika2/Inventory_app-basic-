@@ -1,0 +1,51 @@
+<hr/>
+
+<table cellspacing="0" width="50" align="center">
+    <tr>
+    <td>
+      <mat-form-field  >
+        <input matInput placeholder="Enter Name" [(ngModel)]="enteredItem1" >
+      </mat-form-field>
+    </td>
+    <td>
+      <mat-form-field  >
+        <input matInput placeholder="Enter Price" [(ngModel)]="enteredPrice1" >
+      </mat-form-field>
+    </td>
+    
+        </tr>
+<tr>
+  <td>
+    <mat-form-field  >
+      <input matInput placeholder="Enter Name " type="text" [(ngModel)]="enteredItem2" >
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field >
+          <input matInput placeholder="Enter Price" [(ngModel)]="enteredPrice2">
+        </mat-form-field>
+    </td>
+</tr> 
+   
+ 
+</table>
+<p align="center">
+    <button
+mat-raised-button
+color="accent"
+(click)="onAddList()" align="center">Generate Invoice</button>
+ </p>
+
+
+
+
+    
+     
+     
+        
+      
+   
+   
+  
+  
+
